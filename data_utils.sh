@@ -1,0 +1,15 @@
+python data_utils.py \
+    --use_tpu=False \
+	--bsz_per_host=16 \
+	--num_core_per_host=1 \
+	--uncased=False \
+	--seq_len=128 \
+	--reuse_len=64 \
+	--input_glob=./pre_train_data_128/txt/EP_pre_train_data_128_1kmer.txt \
+	--save_dir=./pre_train_data_128/bsz_pre_host-16_num_core_per_host-1/ \
+	--num_passes=20 \
+	--bi_data=True \
+	--sp_path=./xlnet_EPI_cased_L-12_H-768_A-12/spm.cased.EPI.model \
+	--mask_alpha=6 \
+	--mask_beta=1 \
+	--num_predict=20

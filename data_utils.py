@@ -32,7 +32,7 @@ special_symbols = {
     "<eop>"  : 8,
 }
 
-VOCAB_SIZE = 32000
+VOCAB_SIZE = 15
 UNK_ID = special_symbols["<unk>"]
 CLS_ID = special_symbols["<cls>"]
 SEP_ID = special_symbols["<sep>"]
@@ -874,16 +874,16 @@ def get_input_fn(
 
 if __name__ == "__main__":
   FLAGS = flags.FLAGS
-  flags.DEFINE_bool("use_tpu", True, help="whether to use TPUs")
-  flags.DEFINE_integer("bsz_per_host", 32, help="batch size per host.")
-  flags.DEFINE_integer("num_core_per_host", 8, help="num TPU cores per host.")
+  flags.DEFINE_bool("use_tpu", False, help="whether to use TPUs")
+  flags.DEFINE_integer("bsz_per_host", 8, help="batch size per host.")
+  flags.DEFINE_integer("num_core_per_host", 1, help="num TPU cores per host.")
 
-  flags.DEFINE_integer("seq_len", 512,
+  flags.DEFINE_integer("seq_len", 128,
                        help="Sequence length.")
-  flags.DEFINE_integer("reuse_len", 256,
+  flags.DEFINE_integer("reuse_len", 64,
                        help="Number of token that can be reused as memory. "
                        "Could be half of `seq_len`.")
-  flags.DEFINE_bool("uncased", True, help="Use uncased inputs or not.")
+  flags.DEFINE_bool("uncased", False, help="Use uncased inputs or not.")
   flags.DEFINE_bool("bi_data", True,
                     help="whether to create bidirectional data")
   flags.DEFINE_integer("mask_alpha", default=6,

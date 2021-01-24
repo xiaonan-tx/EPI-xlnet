@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="sn@10.24.82.102:22 (4)">
+    <serverData>
+      <paths name="sn@10.24.82.101:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sn/EPI-xlnet" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.102:22">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data6/sn/EPI-xlnet" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.102:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.102:22 (2)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.102:22 (3)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data3/sn/EPI-xlnet" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.102:22 (4)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/data3/sn/EPI-xlnet" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/data3/sn/EPI-xlnet/pre_train_data_128" />
+            <excludedPath path="/data3/sn/EPI-xlnet/xlnet_EPI_cased_L-12_H-768_A-12" />
+            <excludedPath local="true" path="$PROJECT_DIR$/xlnet_EPI_cased_L-12_H-768_A-12" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.103:22">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="sn@10.24.82.103:22 (1)">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/sn/EPI-xlnet" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>

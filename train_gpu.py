@@ -19,11 +19,13 @@ import model_utils
 from gpu_utils import assign_to_gpu, average_grads_and_vars
 import function_builder
 
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 
 # GPU config
 flags.DEFINE_integer("num_hosts", default=1,
       help="Number of hosts")
-flags.DEFINE_integer("num_core_per_host", default=8,
+flags.DEFINE_integer("num_core_per_host", default=3,
       help="Number of cores per host")
 flags.DEFINE_bool("use_tpu", default=False,
       help="Whether to use TPUs for training.")
@@ -83,7 +85,7 @@ flags.DEFINE_integer('perm_size', default=None,
   help='perm size.')
 flags.DEFINE_bool("uncased", False,
       help="Use uncased inputs or not.")
-flags.DEFINE_integer("n_token", 32000, help="Vocab size")
+flags.DEFINE_integer("n_token", 15, help="Vocab size")
 
 # Model config
 flags.DEFINE_integer("mem_len", default=0,
